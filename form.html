@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form id="formsi" method="post" accept="/Sign">
+        <h1 id="h1si">Sign up</h1>
+        <hr>
+
+        <label id="fname">FirstName<span>*</span>:</label>
+        <label id="iname">LastName:</label><br>
+
+        <input class="ifname" id="ifname" type="text" placeholder="FirstName" required pattern="[^0-9]*">
+        <input class="ifname" id="ilname" type="text" placeholder="LastName" required pattern="[^0-9]*"><br>
+        <div id="firstnameerror" class="clsfirstnameerror"></div>
+        <div id="lastnameerror" class="clslastnameeror"></div>
+
+        <label id="gmail">Email Id<span>*</span>:</label>
+        <input id="email" type="email" placeholder="Email or Gmail" required><br>
+        <div id="emailerror" class="clsemailerror"></div>
+
+        <label id="number">Phone Number:</label>
+        <input id="pnumber" type="tel" pattern="[+0-9]{3}-[0-9]{10}" placeholder="Enter the number like +91-0000000000"
+            required><br><div id="phoneerror" class="clsphoneerror"></div>
+
+        <label id="nps">Password<span>*</span>:</label>
+        <input id="inps" type="password" placeholder="Enter the password" required>
+        <button id="showPasswordButton" onclick="togglePasswordVisibility()">Show Password</button><br>
+        <div id="passerror" class="clspasserror"></div>
+
+        <label id="cps">Confirm Password<span>*</span>:</label>
+        <input id="icps" type="password" placeholder="Enter the password" required>
+        <button id="showConfirmPasswordButton" class="show-password-button">Show Password</button><br>
+        <div id="cpasserror" class="clscpasserror"></div>
+
+        <label id="dob">Data Of Birth<span>*</span>:</label>
+        <input id="dateob" type="date" required><br>
+        <div id="doberror" class="clsdoberror"></div>
+
+        <section>
+            <label id="nat">Nationalty<span>*</span>:</label>
+            <select id="country" name="country" title="country" required>
+                <option class="op">-----select country-----</option>
+                <option class="op" value="in">India</option>
+                <option class="op" value="us">United States</option>
+                <option class="op" value="ca">Canada</option>
+                <option class="op" value="uk">United Kingdom</option>
+                <option class="op" value="de">Germany</option>
+                <option class="op" value="fr">France</option>
+                <option class="op" value="jp">Japan</option>
+                <option class="op" value="cn">China</option>
+                <option class="op" value="au">Australia</option>
+            </select>
+        </section>
+        <div id="natierror" class="clsnatierror"></div>
+
+        <section>
+            <label id="ho">Hobbies:</label>
+            <select id="hob" name="hobbie" title="Hobbies" multiple>
+                <option class="op" value="cricket">Cricket</option>
+                <option class="op" value="football">Football</option>
+                <option class="op" value="swimming">Swimming</option>
+                <option class="op" value="reading">Reading</option>
+                <option class="op" value="painting">Painting</option>
+                <option class="op" value="cooking">Cooking</option>
+                <option class="op" value="gardening">Gardening</option>
+                <option class="op" value="traveling">Traveling</option>
+            </select>
+        </section><div id="hobbierror" class="clshobbierror"></div>
+
+        <label id="State">State:</label>
+        <input list="States" name="State" id="state">
+        <datalist id="States">
+            <option value="Andhra Pradesh">
+            <option value="Arunachal Pradesh">
+            <option value="Assam">
+            <option value="Bihar">
+            <option value="Chhattisgarh">
+            <option value="Goa">
+            <option value="Gujarat">
+            <option value="Haryana">
+            <option value="Himachal Pradesh">
+            <option value="Jharkhand">
+            <option value="Karnataka">
+            <option value="Kerala">
+            <option value="Madhya Pradesh">
+            <option value="Maharashtra">
+            <option value="Manipur">
+            <option value="Meghalaya">
+            <option value="Mizoram">
+            <option value="Nagaland">
+            <option value="Odisha">
+            <option value="Punjab">
+            <option value="Rajasthan">
+            <option value="Sikkim">
+            <option value="Tamil Nadu">
+            <option value="Telangana">
+            <option value="Tripura">
+            <option value="Uttar Pradesh">
+            <option value="Uttarakhand">
+            <option value="West Bengal">
+        </datalist><br><div id="stateerror" class="clsstateerror"></div>
+
+        <label id="adh">Adhaar PDF<span>*</span>:</label>
+        <input id="iadh" type="file" placeholder="file type document" required><br>
+        <div id="adhaarerror" class="clsadhaarerror"></div>
+
+        <!-- <label id="img" for="image">Add Image</label>
+        <input id="iimg" type="image" height="300px" width="300px"><br> -->
+
+        <label id="add">Address:</label>
+        <textarea placeholder="Enter the address" rows="10" cols="30" id="iadd"></textarea>
+        <button id="addAddressButton" title="Add extra address"><img id="imgplus" src="add.png"></button><br>
+        <div id="addresserror" class="clsaddress1error"></div>
+
+        <label id="gender">Gender :&#160;</label>
+        <input id="igender" type="radio" name="gender" value="female">
+        <label class="genders"> Female </label>
+
+        <input id="imale" type="radio" name="gender" value="male">
+        <label class="genders"> Male </label>
+
+        <input id="itrans" type="radio" name="gender" value="trans">
+        <label class="genders"> Trans </label><br>
+        <div id="genderror" class="clsgenderror"></div>
+
+        <label id="abo">Language<span>*</span>:&#160;</label>
+        <input type="checkbox" class="yes" name="lang" value="English">
+
+        <label class="yes"> English</label>
+        <input type="checkbox" class="yes" name="lang" value="Tamil">
+
+        <label class="yes"> Tamil</label>
+        <input type="checkbox" class="yes" name="lang" value="Hindi">
+
+        <label class="yes"> Hindi</label>
+        <input type="checkbox" class="yes" name="lang" value="Malayalam">
+
+        <label class="yes"> Malayalam</label>
+        <input type="checkbox" class="yes" name="lang" value="Telugu">
+
+        <label class="yes"> Telugu</label><br>
+        <div id="langerror" class="clslangerror"></div>
+
+        <!-- <label id="ageLabel">Age<span>*</span>:</label>
+        <button id="agePromptButton">Enter Your Age</button><br> -->
+
+        <input id="iver" type="checkbox" name="verify" required>
+        <label id="ver">The above give details or ture from my side</label><br>
+        <div id="vererror" class="clsvererror"></div>
+        <hr>
+
+        <input type="submit" value="Submit" id="sub">
+        <input type="reset" value="Reset" id="res"><br>
+        <a href="#h1si" class="a-click" id="click">Click me for top &#8593;</a>
+    </form>
+    <script src="form.js"></script>
+   
+</body>
+
+</html>

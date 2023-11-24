@@ -1,0 +1,267 @@
+/* form.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("sailing-ship-659758_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#formsi {
+    background-color:#32acc263;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#h1si {
+    text-align: center;
+    color: rgb(248, 248, 250);
+}
+
+hr{
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-color: rgba(100, 148, 237, 0.616);
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#ver{
+    display: inline;  
+    margin-left: 20px;
+}
+
+#iver{
+    display: inline;
+    margin-top: 20px;
+}
+
+#fname {
+    display: inline;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+#iname {
+    display: inline;
+    margin-left: 160px;
+    margin-right: 10px;
+}
+
+.ifname {
+    display: inline;
+    padding: 10px;
+    padding-right: 55px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#iadd {
+    width: 390px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 150px;
+    grid-row: auto;
+}
+
+.genders {
+    display: inline;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#gender{
+    display: inline ;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#abo{
+    display: inline;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#addAddressButton{
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#imgplus{
+    display: inline;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+}
+
+#ageLabel{
+    display: inline;
+    margin-top: 15px;
+}
+
+#agePromptButton{
+    display: inline;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.yes {
+    display: inline;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+span{
+    color: rgb(196, 81, 81);
+}
+
+input{
+    background-color: transparent;
+    color:#fff;
+    cursor: pointer;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 5px;
+} */
+
+input:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+} 
+textarea:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+::placeholder {
+    color: rgb(19, 10, 10);
+    opacity: 1;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: rgb(10, 5, 5);
+  }
+
+input:hover {
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, .7);
+}
+
+textarea{
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea:hover {
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, .7);
+}
+
+select:hover {
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, .7);
+}
+
+#dateob {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #080808;
+}
+
+select:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+datalist:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#idateob:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#state {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#iadh {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sub,
+#res {
+    display: block;
+    width: 15%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#res {
+    background-color: #dc3545;
+    margin-left: 210px;
+}
+#sub{
+    margin-left: 210px;
+}
+
+.a-click{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: end;
+}
+.a-click:hover{
+    text-decoration: underline;
+    color: #4b4848;
+}
